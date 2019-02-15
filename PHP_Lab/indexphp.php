@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="age_input.html">
+    <link href="index.html">
 </head>
 <body>
 
