@@ -6,7 +6,7 @@
 </head>
 <body>
 
-
+<p>
     <?php
     $myage = $_GET["age"];
 
@@ -22,7 +22,7 @@
     else{
         echo "You may purchase any products";
     }
-
+    ?></p><p><?php
     $wantedgood = $_GET["product"];
 
     switch($wantedgood){
@@ -39,7 +39,7 @@
             echo "That product is not available";
     }
 
-    ?>
+    ?></p>
 
 
 
