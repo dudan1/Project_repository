@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<p>
+
     <?php
     $myage = $_GET["age"];
 
@@ -24,7 +24,7 @@
     }
 
     ?>
-</p>
+
 
 </body>
 </html>
