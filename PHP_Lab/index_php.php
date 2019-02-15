@@ -37,7 +37,6 @@
             break;
         default:
             echo "That product is not available";
-
     }
 
     ?>
