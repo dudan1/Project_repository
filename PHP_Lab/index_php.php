@@ -78,9 +78,7 @@
             $products[0] = "no products";
         }
             foreach ($products as $x) {
-                "<br>On $i/06/2019 ";
-                print"$x";
-                " are available";
+                print "<br>On $i/06/2019 $x are available";
             }
         }
 
