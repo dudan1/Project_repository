@@ -77,11 +77,10 @@
             unset($products[2]);
             $products[0] = "no products";
         }
-
-            echo "On $i/06/2019";
             foreach ($products as $x) {
-                print"$x <br>";
-                "are available";
+                "<br>On $i/06/2019 ";
+                print"$x";
+                " are available";
             }
         }
 
