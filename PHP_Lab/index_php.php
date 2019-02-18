@@ -40,10 +40,12 @@
     }
 
     ?></p>
-    <p><?php $provisionedActivities = array("specs","mugs","sausage rolls");
+    <p><?php echo "The following products<br>";
+        $provisionedActivities = array("specs","mugs","sausage rolls");
     foreach ($provisionedActivities as $x) {
         print"<p>$x</p>";
     }
+    echo "<br>Have been amended to<br>";
     unset($provisionedActivities[2]);
     $provisionedActivities[1] = "hugs";
     foreach ($provisionedActivities as $x) {
