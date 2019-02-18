@@ -52,6 +52,42 @@
         print"<p>$x</p>";
     }
     ?></p>
+<p>The products available on each day are as follows<?php
+
+    for($i = 1;$i <31; $i++){
+        $products = array("specs", "mugs", "sausage rolls");
+        if($i%2 == 0 and $i%3 !== 0 and $i%4 !== 0){
+            unset($products[1]);
+            unset($products[2]);
+        }
+        else if($i%2 !== 0 and $i%3 == 0 and $i%4 !== 0){
+            unset($products[0]);
+            unset($products[2]);
+        }
+        else if($i%2 !== 0 and $i%3 !== 0 and $i%4 == 0){
+            unset($products[0]);
+            unset($products[1]);
+        }
+        else if($i%2 == 0 and $i%3 == 0 and $i%4 !== 0){
+            unset($products[2]);
+        }
+        else if($i%2 == 0 and $i%3 !== 0 and $i%4 == 0){
+            unset($products[1]);
+        }
+        else if($i%2 !== 0 and $i%3 == 0 and $i%4 == 0){
+            unset($products[0]);
+        }
+        else if($i%2 == 0 and $i%3 == 0 and $i%4 == 0){
+        }
+        else {
+            unset($products[1]);
+            unset($products[2]);
+            $products[0] = "no products";
+        }
+
+        echo"<p>On $i/06/2019 $products are available";
+    }
+    ?></p>
 
 
 
