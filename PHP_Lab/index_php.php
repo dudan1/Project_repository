@@ -38,8 +38,18 @@
         default:
             echo "That product is not available";
     }
-    ?></p>
 
+    ?></p>
+    <p><?php $provisionedActivities = array("specs","mugs","sausage rolls");
+    foreach ($provisionedActivities as $x) {
+        print"<p>$x</p>";
+    }
+    unset($provisionedActivities[2]);
+    $provisionedActivities[1] = "hugs";
+    foreach ($provisionedActivities as $x) {
+        print"<p>$x</p>";
+    }
+    ?></p>
 
 
 
